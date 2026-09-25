@@ -48,15 +48,15 @@ header{
 .header-inner{
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 22px 24px;
   display:flex;
   align-items:center;
   gap:18px;
   flex-wrap: wrap;
 }
 .brand-logo{
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -127,20 +127,61 @@ header{
 .wrap{
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 36px 24px 80px;
 }
 
-.intro{
-  margin-bottom: 32px;
+/* ============================================
+   DEPARTAMENTO (sección)
+   ============================================ */
+.departamento{
+  margin-bottom: 44px;
+  scroll-margin-top: 90px;
 }
-.intro h2{
-  font-size: 22px;
+.departamento:last-child{
+  margin-bottom: 0;
+}
+
+.departamento-head{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--sf-borde);
+}
+.departamento-marca{
+  width: 6px;
+  height: 42px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--sf-naranja), var(--sf-magenta), var(--sf-violeta));
+  flex-shrink: 0;
+}
+.departamento-titulo{
+  flex: 1;
+  min-width: 0;
+}
+.departamento-titulo h2{
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 6px;
+  color: var(--sf-tinta);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
-.intro p{
+.departamento-titulo p{
+  font-size: 12.5px;
   color: var(--sf-texto-suave);
-  font-size: 14px;
+  margin-top: 2px;
+}
+.departamento-contador{
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  background: #fff;
+  border: 1px solid var(--sf-borde);
+  padding: 4px 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* ============================================
@@ -148,8 +189,8 @@ header{
    ============================================ */
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 14px;
 }
 
 /* ============================================
@@ -160,7 +201,7 @@ header{
   background: #fff;
   border: 1px solid var(--sf-borde);
   border-radius: 12px;
-  padding: 20px;
+  padding: 18px;
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -188,7 +229,7 @@ header{
   display:flex;
   align-items:center;
   gap:12px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .card-icon{
   width: 42px;
@@ -218,7 +259,7 @@ header{
   font-size: 13px;
   color: var(--sf-texto-suave);
   margin-bottom: 14px;
-  min-height: 36px;
+  min-height: 34px;
 }
 
 .card-meta{
@@ -287,10 +328,13 @@ footer strong{
    RESPONSIVE
    ============================================ */
 @media (max-width: 600px){
-  .header-inner{ padding: 18px 16px; gap: 12px; }
-  .wrap{ padding: 24px 16px 60px; }
-  .brand-logo{ width: 48px; height: 48px; }
+  .header-inner{ padding: 16px; gap: 12px; }
+  .wrap{ padding: 22px 16px 60px; }
+  .brand-logo{ width: 46px; height: 46px; }
   .brand-text h1{ font-size: 17px; }
   .buscador{ width: 100%; min-width: 0; }
   .grid{ grid-template-columns: 1fr; }
+  .departamento{ margin-bottom: 34px; }
+  .departamento-marca{ height: 34px; }
+  .departamento-titulo h2{ font-size: 15px; }
 }

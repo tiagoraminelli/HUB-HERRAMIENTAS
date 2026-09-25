@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyectos · Tiago Raminelli</title>
+<title>Herramientas Internas · Tiago Raminelli</title>
 <link rel="icon" href="santa fe.webp">
 <link rel="stylesheet" href="estilos.css">
 </head>
@@ -20,24 +20,17 @@
     </div>
     <div class="buscador">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" id="buscador" placeholder="Buscar proyecto...">
+      <input type="text" id="buscador" placeholder="Buscar herramienta...">
     </div>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="intro">
-    <h2>Hub de aplicaciones</h2>
-    <p>Accesos directos a las planillas y sistemas en producción.</p>
-  </div>
+<main class="wrap" id="contenido"></main>
 
-  <div class="grid" id="gridProyectos"></div>
-
-  <div class="vacio" id="sinResultados" hidden>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <p>No se encontraron proyectos</p>
-  </div>
-</main>
+<div class="vacio" id="sinResultados" hidden>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  <p>No se encontraron herramientas</p>
+</div>
 
 <footer>
   Hecho con <strong>♥</strong> · Tiago Raminelli
