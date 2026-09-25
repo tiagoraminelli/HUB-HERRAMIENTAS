@@ -12,8 +12,8 @@
 // ============================================
 const DEPARTAMENTOS = [
   {
-    nombre: "Judicial",
-    descripcion: "Herramientas para gestión judicial",
+    nombre: "AREAS GENERALES",
+    descripcion: "Herramientas para Gestión General del Hospital ",
     herramientas: [
       {
         nombre: "Creador de Notas",
