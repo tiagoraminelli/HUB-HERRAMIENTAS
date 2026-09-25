@@ -12,6 +12,21 @@
 // ============================================
 const DEPARTAMENTOS = [
   {
+    nombre: "Judicial",
+    descripcion: "Herramientas para gestión judicial",
+    herramientas: [
+      {
+        nombre: "Creador de Notas",
+        descripcion: "Herramientas para gestión judicial.",
+        url: "https://tiagoraminelli.github.io/PROYECTO-JUICIO/",
+        lenguaje: "CSS",
+        actualizado: "Ayer",
+        icono: "PJ",
+        variante: 3
+      }
+    ]
+  },
+  {
     nombre: "Consejo Asesor",
     descripcion: "Herramientas de gestión administrativa",
     herramientas: [
@@ -85,21 +100,6 @@ const DEPARTAMENTOS = [
         lenguaje: "HTML",
         actualizado: "Reciente",
         icono: "TM",
-        variante: 3
-      }
-    ]
-  },
-  {
-    nombre: "Judicial",
-    descripcion: "Herramientas para gestión judicial",
-    herramientas: [
-      {
-        nombre: "Creador de Notas",
-        descripcion: "Herramientas para gestión judicial.",
-        url: "https://tiagoraminelli.github.io/PROYECTO-JUICIO/",
-        lenguaje: "CSS",
-        actualizado: "Ayer",
-        icono: "PJ",
         variante: 3
       }
     ]
