@@ -1,0 +1,296 @@
+/* ============================================
+   VARIABLES — Identidad Santa Fe
+   ============================================ */
+:root{
+  --sf-naranja: #F5A623;
+  --sf-magenta: #E91E8C;
+  --sf-violeta: #7B2D8E;
+  --sf-tinta:   #2B2B3A;
+  --sf-gris:    #F5F5F7;
+  --sf-borde:   #E5E5EA;
+  --sf-texto-suave: #6b7280;
+}
+
+/* ============================================
+   RESET
+   ============================================ */
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+html, body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--sf-gris);
+  color: var(--sf-tinta);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ============================================
+   FRANJA SUPERIOR
+   ============================================ */
+.franja{
+  height: 6px;
+  background: linear-gradient(90deg,
+    var(--sf-naranja) 0%,
+    var(--sf-magenta) 50%,
+    var(--sf-violeta) 100%);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header{
+  background:#fff;
+  border-bottom:1px solid var(--sf-borde);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap: wrap;
+}
+.brand-logo{
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.brand-text{
+  flex: 1;
+  min-width: 180px;
+}
+.brand-text h1{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--sf-tinta);
+}
+.brand-text p{
+  font-size: 13px;
+  color: var(--sf-texto-suave);
+  margin-top: 2px;
+}
+.brand-text p strong{
+  background: linear-gradient(90deg, var(--sf-naranja), var(--sf-magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* ============================================
+   BUSCADOR
+   ============================================ */
+.buscador{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sf-gris);
+  border: 1px solid var(--sf-borde);
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-width: 240px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.buscador:focus-within{
+  background: #fff;
+  border-color: var(--sf-magenta);
+  box-shadow: 0 0 0 3px rgba(233, 30, 140, 0.1);
+}
+.buscador .icon{
+  width: 16px;
+  height: 16px;
+  color: var(--sf-texto-suave);
+  flex-shrink: 0;
+}
+.buscador input{
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--sf-tinta);
+  width: 100%;
+}
+.buscador input::placeholder{
+  color: #9ca3af;
+}
+
+/* ============================================
+   CONTENEDOR
+   ============================================ */
+.wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.intro{
+  margin-bottom: 32px;
+}
+.intro h2{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.intro p{
+  color: var(--sf-texto-suave);
+  font-size: 14px;
+}
+
+/* ============================================
+   GRID
+   ============================================ */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* ============================================
+   TARJETA
+   ============================================ */
+.card{
+  display: block;
+  background: #fff;
+  border: 1px solid var(--sf-borde);
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.card::before{
+  content:"";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--sf-naranja), var(--sf-magenta), var(--sf-violeta));
+  opacity: 0;
+  transition: opacity 0.18s;
+}
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -10px rgba(123, 45, 142, 0.18);
+  border-color: transparent;
+}
+.card:hover::before{ opacity: 1; }
+
+.card-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom: 14px;
+}
+.card-icon{
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--sf-naranja), var(--sf-magenta));
+  letter-spacing: 0.02em;
+}
+.card-icon.v2{ background: linear-gradient(135deg, var(--sf-magenta), var(--sf-violeta)); }
+.card-icon.v3{ background: linear-gradient(135deg, var(--sf-violeta), var(--sf-naranja)); }
+
+.card-title{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--sf-tinta);
+  line-height: 1.25;
+  word-break: break-word;
+}
+.card-desc{
+  font-size: 13px;
+  color: var(--sf-texto-suave);
+  margin-bottom: 14px;
+  min-height: 36px;
+}
+
+.card-meta{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+  padding-top: 12px;
+  border-top: 1px solid var(--sf-borde);
+}
+.badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+.dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--sf-naranja), var(--sf-magenta));
+}
+
+/* ============================================
+   ESTADO VACÍO
+   ============================================ */
+.vacio{
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--sf-texto-suave);
+}
+.vacio svg{
+  width: 48px;
+  height: 48px;
+  color: #d1d5db;
+  margin-bottom: 12px;
+}
+.vacio p{
+  font-size: 14px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer{
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+footer strong{
+  background: linear-gradient(90deg, var(--sf-naranja), var(--sf-violeta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 600px){
+  .header-inner{ padding: 18px 16px; gap: 12px; }
+  .wrap{ padding: 24px 16px 60px; }
+  .brand-logo{ width: 48px; height: 48px; }
+  .brand-text h1{ font-size: 17px; }
+  .buscador{ width: 100%; min-width: 0; }
+  .grid{ grid-template-columns: 1fr; }
+}
