@@ -23,6 +23,15 @@ const DEPARTAMENTOS = [
         actualizado: "Ayer",
         icono: "PJ",
         variante: 3
+      },
+      {
+        nombre: "Soport Tecnico",
+        descripcion: "Herramientas para gestión judicial.",
+        url: "https://tiagoraminelli.github.io/SOPORTE-IT/",
+        lenguaje: "JavaScript",
+        actualizado: "Hoy",
+        icono: "PJ",
+        variante: 1
       }
     ]
   },
