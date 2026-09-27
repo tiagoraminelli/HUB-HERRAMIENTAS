@@ -25,13 +25,13 @@ const DEPARTAMENTOS = [
         variante: 3
       },
       {
-        nombre: "Soport Tecnico",
-        descripcion: "Herramientas para gestión judicial.",
+        nombre: "Soporte Tecnico",
+        descripcion: "Canal de Problemas Informaticos General",
         url: "https://tiagoraminelli.github.io/SOPORTE-IT/",
         lenguaje: "JavaScript",
         actualizado: "Hoy",
-        icono: "PJ",
-        variante: 1
+        icono: "ST",
+        variante: 2
       }
     ]
   },
