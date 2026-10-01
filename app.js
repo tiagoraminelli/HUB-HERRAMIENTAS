@@ -32,6 +32,15 @@ const DEPARTAMENTOS = [
         actualizado: "Hoy",
         icono: "ST",
         variante: 2
+      },
+      {
+        nombre: "Solicitud y Entrega de Insumos",
+        descripcion: "Canal de Solicitud y Entrega de Insumos General",
+        url: "https://tiagoraminelli.github.io/REPARTICION/",
+        lenguaje: "JavaScript",
+        actualizado: "Hoy",
+        icono: "RP",
+        variante: 1
       }
     ]
   },
