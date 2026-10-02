@@ -12,8 +12,8 @@
 // ============================================
 const DEPARTAMENTOS = [
   {
-    nombre: "AREAS GENERALES",
-    descripcion: "Herramientas para Gestión General del Hospital ",
+    nombre: "Áreas Generales",
+    descripcion: "Herramientas para gestión general del hospital",
     herramientas: [
       {
         nombre: "Creador de Notas",
@@ -25,8 +25,8 @@ const DEPARTAMENTOS = [
         variante: 3
       },
       {
-        nombre: "Soporte Tecnico",
-        descripcion: "Canal de Problemas Informaticos General",
+        nombre: "Soporte Técnico",
+        descripcion: "Canal de problemas informáticos general.",
         url: "https://tiagoraminelli.github.io/SOPORTE-IT/",
         lenguaje: "JavaScript",
         actualizado: "Hoy",
@@ -35,14 +35,14 @@ const DEPARTAMENTOS = [
       },
       {
         nombre: "Solicitud y Entrega de Insumos",
-        descripcion: "Canal de Solicitud y Entrega de Insumos General",
+        descripcion: "Canal de solicitud y entrega de insumos general.",
         url: "https://tiagoraminelli.github.io/REPARTICION/",
         lenguaje: "JavaScript",
         actualizado: "Hoy",
         icono: "RP",
         variante: 1
       },
-       {
+      {
         nombre: "Planillas de Obra Social",
         descripcion: "Herramientas para gestión de planillas de obra social.",
         url: "https://tiagoraminelli.github.io/planillas-de-obra-social-/",
@@ -51,8 +51,6 @@ const DEPARTAMENTOS = [
         icono: "OS",
         variante: 1
       }
-}
-
     ]
   },
   {
@@ -76,15 +74,6 @@ const DEPARTAMENTOS = [
         actualizado: "Hace 4 días",
         icono: "P",
         variante: 3
-      },
-      {
-        nombre: "Planillas de Obra Social",
-        descripcion: "Gestión y carga de planillas para obras sociales.",
-        url: "https://tiagoraminelli.github.io/planillas-de-obra-social-/",
-        lenguaje: "JavaScript",
-        actualizado: "Hace 1 semana",
-        icono: "OS",
-        variante: 1
       }
     ]
   },
