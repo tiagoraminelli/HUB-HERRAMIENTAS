@@ -41,7 +41,17 @@ const DEPARTAMENTOS = [
         actualizado: "Hoy",
         icono: "RP",
         variante: 1
-      }
+      },
+      {
+  nombre: "Planillas de Obra Social",
+  descripcion: "Herramientas para gestión de planillas de obra social.",
+  url: "https://tiagoraminelli.github.io/planillas-de-obra-social-/",
+  lenguaje: "JavaScript",
+  actualizado: "Hoy",
+  icono: "OS",
+  variante: 1
+}
+
     ]
   },
   {
