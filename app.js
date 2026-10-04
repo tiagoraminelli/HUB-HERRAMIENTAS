@@ -82,12 +82,12 @@ const DEPARTAMENTOS = [
     descripcion: "Sistemas de facturación y prestaciones",
     herramientas: [
       {
-        nombre: "Proyecto P.A.M.I",
+        nombre: "Generador de Expedientes",
         descripcion: "Sistema para gestión PAMI.",
         url: "https://tiagoraminelli.github.io/PROYECTO-P.A.M.I/",
         lenguaje: "JavaScript",
         actualizado: "Hace 3 días",
-        icono: "PA",
+        icono: "EX",
         variante: 2
       }
     ]
