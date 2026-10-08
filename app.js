@@ -121,6 +121,26 @@ const DEPARTAMENTOS = [
         variante: 3
       }
     ]
+  },
+  // ============================================
+  // NUEVO DEPARTAMENTO: PSICOLOGÍA
+  // ============================================
+  {
+    nombre: "Psicología",
+    descripcion: "Generación de informes, notas y protocolos psicológicos",
+    herramientas: [
+      {
+        nombre: "Informes Psicológicos",
+        descripcion: "Generador de informes, notas de derivación, constancias, consentimientos, evoluciones y altas.",
+        // 👇 Cambiar por la URL de GitHub Pages cuando esté activado:
+        //    https://tiagoraminelli.github.io/psicologia/
+        url: "https://tiagoraminelli.github.io/psicologia/",
+        lenguaje: "JavaScript",
+        actualizado: "Hoy",
+        icono: "PS",
+        variante: 2
+      }
+    ]
   }
 ];
 
