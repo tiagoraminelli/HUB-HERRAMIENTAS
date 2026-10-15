@@ -74,6 +74,15 @@ const DEPARTAMENTOS = [
         actualizado: "Hace 4 días",
         icono: "P",
         variante: 3
+      },
+      {
+        nombre: "Calendario",
+        descripcion: "Calendario para organización y seguimiento de actividades.",
+        url: "https://tiagoraminelli.github.io/calendario/",
+        lenguaje: "JavaScript",
+        actualizado: "Hoy",
+        icono: "CA",
+        variante: 1
       }
     ]
   },
