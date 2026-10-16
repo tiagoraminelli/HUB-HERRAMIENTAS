@@ -83,7 +83,16 @@ const DEPARTAMENTOS = [
         actualizado: "Hoy",
         icono: "CA",
         variante: 1
-      }
+      },
+      {
+  nombre: "Guardias Médicas",
+  descripcion: "Sistema de gestión y liquidación de guardias médicas.",
+  url: "https://tiagoraminelli.github.io/guardias-medicas/",
+  lenguaje: "JavaScript",
+  actualizado: "Hoy",
+  icono: "GM",
+  variante: 1
+}
     ]
   },
   {
